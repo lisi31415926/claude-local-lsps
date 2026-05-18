@@ -65,10 +65,9 @@
         "maxRestarts": 3
     },
     "powershell": {
-        "command": "cmd.exe",
+        "command": "C:\\Users\\LI\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe",
         "args": [
-            "/d", "/c",
-            "pwsh", "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
+            "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
             "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1",
             "-BundledModulesPath", "C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices",
             "-LogPath", "C:\\Users\\LI\\.claude\\pses-cc.log",
