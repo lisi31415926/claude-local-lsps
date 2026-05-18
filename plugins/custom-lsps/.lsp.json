@@ -75,5 +75,25 @@
         "initializationOptions": {},
         "settings": {},
         "maxRestarts": 3
+    },
+    "powershell": {
+        "command": "pwsh",
+        "args": [
+            "-NoLogo",
+            "-NoProfile",
+            "-Command",
+            "$module = Get-Module -ListAvailable PowerShellEditorServices | Sort-Object Version -Descending | Select-Object -First 1; if (-not $module) { throw 'PowerShellEditorServices not installed' }; Import-Module $module.Path; Start-EditorServices -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -Stdio -BundledModulesPath (Split-Path $module.Path) -LogLevel 'None' -EnableConsoleRepl"
+        ],
+        "extensionToLanguage": {
+            ".ps1": "powershell",
+            ".psm1": "powershell",
+            ".psd1": "powershell"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "startupTimeout": 120000,
+        "shutdownTimeout": 20000,
+        "maxRestarts": 3
     }
 }
