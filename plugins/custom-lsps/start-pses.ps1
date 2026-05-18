@@ -13,4 +13,4 @@ if (-not $moduleDir) {
 }
 
 $scriptPath = Join-Path $moduleDir 'Start-EditorServices.ps1'
-& $scriptPath -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -BundledModulesPath $moduleDir -LogPath $LogPath -LogLevel $LogLevel -SessionDetailsPath (Join-Path $env:TEMP "pses-${PID}") -Stdio -FeatureFlags @()
+& $scriptPath -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -BundledModulesPath $moduleDir -LogPath $LogPath -LogLevel $LogLevel -Stdio -FeatureFlags @()
