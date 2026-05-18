@@ -65,9 +65,10 @@
         "maxRestarts": 3
     },
     "powershell": {
-        "command": "pwsh.exe",
+        "command": "cmd.exe",
         "args": [
-            "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
+            "/d", "/c",
+            "pwsh.exe", "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
             "-Command",
             "Import-Module 'C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices\\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -BundledModulesPath 'C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices' -LogPath 'C:\\Users\\LI\\.claude\\pses-cc.log' -LogLevel 'Information' -Stdio"
         ],
