@@ -76,7 +76,7 @@
         "settings": {},
         "maxRestarts": 3
     },
-    "pwsh_lsp": {
+    "powershell": {
         "command": "cmd.exe",
         "args": [
             "/d", "/c",
@@ -87,11 +87,6 @@
             ".psm1": "powershell",
             ".psd1": "powershell"
         },
-        "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
-        "startupTimeout": 120000,
-        "shutdownTimeout": 20000,
-        "maxRestarts": 3
+        "transport": "stdio"
     }
 }
