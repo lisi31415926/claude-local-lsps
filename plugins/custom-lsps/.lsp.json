@@ -71,7 +71,7 @@
             "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1",
             "-BundledModulesPath", "C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices",
             "-LogPath", "C:\\Users\\LI\\.claude\\pses-cc.log",
-            "-LogLevel", "Normal",
+            "-LogLevel", "Information",
             "-Stdio"
         ],
         "extensionToLanguage": {
