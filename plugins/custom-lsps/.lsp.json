@@ -65,18 +65,23 @@
         "maxRestarts": 3
     },
     "powershell": {
-        "command": "cmd.exe",
+        "command": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
         "args": [
-            "/d", "/c",
-            "pwsh.exe", "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
+            "-NoLogo",
+            "-NoProfile",
+            "-NonInteractive",
+            "-ExecutionPolicy", "Bypass",
             "-Command",
-            "Import-Module 'C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices\\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -BundledModulesPath 'C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices' -LogPath 'C:\\Users\\LI\\.claude\\pses-cc.log' -LogLevel 'Information' -Stdio"
+            "$m = Get-Module -ListAvailable PowerShellEditorServices 2>$null | Sort-Object Version -Descending | Select-Object -First 1; if (-not $m) { throw 'PowerShellEditorServices is not installed. Run: Install-Module -Name PowerShellEditorServices -Scope CurrentUser' }; Import-Module $m.Path 3>$null 4>$null 5>$null 6>$null; Start-EditorServices -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -Stdio -BundledModulesPath (Split-Path $m.Path) -LogPath 'C:\\Users\\LI\\.claude\\pses-cc.log' -LogLevel 'Normal'"
         ],
         "extensionToLanguage": {
             ".ps1": "powershell",
             ".psm1": "powershell",
             ".psd1": "powershell"
         },
-        "transport": "stdio"
+        "transport": "stdio",
+        "startupTimeout": 120000,
+        "shutdownTimeout": 20000,
+        "maxRestarts": 3
     }
 }
