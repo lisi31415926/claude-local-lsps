@@ -80,7 +80,12 @@
         "command": "cmd.exe",
         "args": [
             "/d", "/c",
-            "pwsh", "-NoLogo", "-NoProfile", "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1"
+            "pwsh", "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
+            "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1",
+            "-BundledModulesPath", "C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices",
+            "-LogPath", "C:\\Users\\LI\\AppData\\Local\\Temp\\pses-cc.log",
+            "-LogLevel", "None",
+            "-Stdio"
         ],
         "extensionToLanguage": {
             ".ps1": "powershell",
