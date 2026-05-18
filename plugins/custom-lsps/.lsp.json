@@ -1,7 +1,7 @@
 {
     "bash": {
-        "command": "bash-language-server",
-        "args": ["start"],
+        "command": "cmd.exe",
+        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\bash-language-server.cmd", "start"],
         "extensionToLanguage": {
             ".sh": "shellscript",
             ".bash": "shellscript"
@@ -12,8 +12,8 @@
         "maxRestarts": 3
     },
     "sql": {
-        "command": "sql-language-server",
-        "args": ["up", "--method", "stdio"],
+        "command": "cmd.exe",
+        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\sql-language-server.cmd", "up", "--method", "stdio"],
         "extensionToLanguage": {
             ".sql": "sql"
         },
@@ -23,8 +23,8 @@
         "maxRestarts": 3
     },
     "yaml": {
-        "command": "yaml-language-server",
-        "args": ["--stdio"],
+        "command": "cmd.exe",
+        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\yaml-language-server.cmd", "--stdio"],
         "extensionToLanguage": {
             ".yml": "yaml",
             ".yaml": "yaml"
