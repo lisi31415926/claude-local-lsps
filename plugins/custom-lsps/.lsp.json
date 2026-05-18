@@ -83,7 +83,7 @@
             "pwsh", "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
             "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1",
             "-BundledModulesPath", "C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices",
-            "-LogPath", "C:\\Users\\LI\\AppData\\Local\\Temp\\pses-cc.log",
+            "-LogPath", "C:\\Users\\LI\\.claude\\pses-cc.log",
             "-LogLevel", "None",
             "-Stdio"
         ],
