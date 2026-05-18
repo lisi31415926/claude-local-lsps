@@ -65,13 +65,13 @@
         "maxRestarts": 3
     },
     "powershell": {
-        "command": "C:\\Users\\LI\\AppData\\Local\\Microsoft\\WindowsApps\\pwsh.exe",
+        "command": "pwsh.exe",
         "args": [
             "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
             "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1",
             "-BundledModulesPath", "C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices",
             "-LogPath", "C:\\Users\\LI\\.claude\\pses-cc.log",
-            "-LogLevel", "None",
+            "-LogLevel", "Normal",
             "-Stdio"
         ],
         "extensionToLanguage": {
