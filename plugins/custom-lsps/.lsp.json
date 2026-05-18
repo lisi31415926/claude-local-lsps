@@ -1,0 +1,37 @@
+{
+    "bash": {
+        "command": "bash-language-server",
+        "args": ["start"],
+        "extensionToLanguage": {
+            ".sh": "shellscript",
+            ".bash": "shellscript"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    },
+    "sql": {
+        "command": "sql-language-server",
+        "args": ["up", "--method", "stdio"],
+        "extensionToLanguage": {
+            ".sql": "sql"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    },
+    "yaml": {
+        "command": "yaml-language-server",
+        "args": ["--stdio"],
+        "extensionToLanguage": {
+            ".yml": "yaml",
+            ".yaml": "yaml"
+        },
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "local-lsps",
+  "owner": { "name": "Local" },
+  "plugins": [
+    {
+      "name": "custom-lsps",
+      "version": "1.0.0",
+      "source": "./plugins/custom-lsps"
+    }
+  ]
+}
