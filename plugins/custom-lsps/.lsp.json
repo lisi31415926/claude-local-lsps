@@ -68,11 +68,8 @@
         "command": "pwsh.exe",
         "args": [
             "-NoLogo", "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
-            "-File", "${CLAUDE_PLUGIN_ROOT}\\start-pses.ps1",
-            "-BundledModulesPath", "C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices",
-            "-LogPath", "C:\\Users\\LI\\.claude\\pses-cc.log",
-            "-LogLevel", "Information",
-            "-Stdio"
+            "-Command",
+            "Import-Module 'C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices\\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Claude Code' -HostProfileId 'ClaudeCode' -HostVersion '1.0.0' -BundledModulesPath 'C:\\Users\\LI\\Documents\\PowerShell\\Modules\\PowerShellEditorServices\\PowerShellEditorServices' -LogPath 'C:\\Users\\LI\\.claude\\pses-cc.log' -LogLevel 'Information' -Stdio"
         ],
         "extensionToLanguage": {
             ".ps1": "powershell",
