@@ -1,6 +1,6 @@
 {
   "name": "custom-lsps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom LSP servers for Bash, SQL, and YAML",
   "author": { "name": "Local" },
   "category": "development",
