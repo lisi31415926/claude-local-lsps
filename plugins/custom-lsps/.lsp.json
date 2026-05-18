@@ -1,42 +1,36 @@
 {
     "bash": {
-        "command": "cmd.exe",
-        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\bash-language-server.cmd", "start"],
+        "command": "node.exe",
+        "args": ["C:\\Users\\LI\\AppData\\Roaming\\npm\\node_modules\\bash-language-server\\out\\cli.js", "start"],
         "extensionToLanguage": {
             ".sh": "shellscript",
             ".bash": "shellscript"
         },
         "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
         "maxRestarts": 3
     },
     "sql": {
-        "command": "cmd.exe",
-        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\sql-language-server.cmd", "up", "--method", "stdio"],
+        "command": "node.exe",
+        "args": ["C:\\Users\\LI\\AppData\\Roaming\\npm\\node_modules\\sql-language-server\\dist\\bin\\cli.js", "up", "--method", "stdio"],
         "extensionToLanguage": {
             ".sql": "sql"
         },
         "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
         "maxRestarts": 3
     },
     "yaml": {
-        "command": "cmd.exe",
-        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\yaml-language-server.cmd", "--stdio"],
+        "command": "node.exe",
+        "args": ["C:\\Users\\LI\\AppData\\Roaming\\npm\\node_modules\\yaml-language-server\\out\\server\\src\\server.js", "--stdio"],
         "extensionToLanguage": {
             ".yml": "yaml",
             ".yaml": "yaml"
         },
         "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
         "maxRestarts": 3
     },
     "css": {
-        "command": "cmd.exe",
-        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\vscode-css-language-server.cmd", "--stdio"],
+        "command": "node.exe",
+        "args": ["C:\\Users\\LI\\AppData\\Roaming\\npm\\node_modules\\@zed-industries\\vscode-langservers-extracted\\bin\\vscode-css-language-server", "--stdio"],
         "extensionToLanguage": {
             ".css": "css",
             ".scss": "scss",
@@ -44,25 +38,21 @@
             ".less": "less"
         },
         "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
         "maxRestarts": 3
     },
     "html": {
-        "command": "cmd.exe",
-        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\vscode-html-language-server.cmd", "--stdio"],
+        "command": "node.exe",
+        "args": ["C:\\Users\\LI\\AppData\\Roaming\\npm\\node_modules\\@zed-industries\\vscode-langservers-extracted\\bin\\vscode-html-language-server", "--stdio"],
         "extensionToLanguage": {
             ".html": "html",
             ".htm": "html"
         },
         "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
         "maxRestarts": 3
     },
     "typescript": {
-        "command": "cmd.exe",
-        "args": ["/d", "/c", "C:\\Users\\LI\\AppData\\Roaming\\npm\\vtsls.cmd", "--stdio"],
+        "command": "node.exe",
+        "args": ["C:\\Users\\LI\\AppData\\Roaming\\npm\\node_modules\\@vtsls\\language-server\\bin\\vtsls.js", "--stdio"],
         "extensionToLanguage": {
             ".ts": "typescript",
             ".tsx": "typescriptreact",
@@ -72,8 +62,6 @@
             ".cjs": "javascript"
         },
         "transport": "stdio",
-        "initializationOptions": {},
-        "settings": {},
         "maxRestarts": 3
     },
     "powershell": {
