@@ -76,7 +76,7 @@
         "settings": {},
         "maxRestarts": 3
     },
-    "powershell": {
+    "pwsh_lsp": {
         "command": "cmd.exe",
         "args": [
             "/d", "/c",
